@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Build directory
+build/
+
+# IDEs / Code editors
+.idea/
+.vs/
+.vscode/
+
+# Secrets
+.env
