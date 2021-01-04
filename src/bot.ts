@@ -1,10 +1,9 @@
-import './bootstrap';
-import {container, injectable} from "tsyringe";
+import {injectable} from "tsyringe";
 import {ClientService} from "./services/discord/client.service";
 import {PingCommand} from "./commands/ping.command";
 
 @injectable()
-class Bot {
+export class Bot {
     public constructor(private client: ClientService) {
     }
 
@@ -21,5 +20,3 @@ class Bot {
         });
     }
 }
-
-container.resolve(Bot).main();
